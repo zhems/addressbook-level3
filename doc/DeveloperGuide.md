@@ -77,6 +77,33 @@ Use case ends.
 > 3a1. AddressBook shows an error message <br>
   Use case resumes at step 2
 
+#### Use case: Edit existing tag
+
+**MSS**
+
+1. User searches for an existing person
+2. AddressBook shows the persons' details, including tags
+3. User requests to edit tags
+4. AddressBook diplays instructions for keying in tags
+5. User keys in new tags
+6. AddressBook saves changes <br>
+Use case ends.
+
+**Extensions**
+
+1a. Person cannot be found
+
+> 1a1. AddressBook informs user that person cannot be found
+  Use case resumes at step 1
+
+5a. Tags keyed in are invalid
+
+> 5a1. AddressBook informs user that tags are invalid
+  Use case resumes at step 5
+
+*a. At any time, User choses to exit
+Use case ends.
+
 ## Appendix C : Non Functional Requirements
 
 1. Should work on any [mainstream OS](#mainstream-os) as long as it has Java 8 or higher installed.
