@@ -5,16 +5,21 @@
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
 
 <VBox alignment="center" stylesheets="@/seedu/addressbook/ui/DarkTheme.css" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="seedu.addressbook.ui.MainWindow">
 
     <children>
 
-        <TextField fx:id="commandInput" onAction="#onCommand" VBox.vgrow="NEVER">
-        </TextField>
+        <TextField fx:id="commandInput" onAction="#onCommand" promptText="addressbook" VBox.vgrow="NEVER">
+         <font>
+            <Font name="Comic Sans MS" size="27.0" />
+         </font></TextField>
 
-        <TextArea fx:id="outputConsole" editable="false" wrapText="true" VBox.vgrow="ALWAYS">
-        </TextArea>
+        <TextArea fx:id="outputConsole" editable="false" promptText="addressbook" wrapText="true" VBox.vgrow="ALWAYS">
+         <font>
+            <Font name="Comic Sans MS" size="27.0" />
+         </font></TextArea>
       <ImageView fitHeight="124.0" fitWidth="200.0">
          <image>
             <Image url="@../../../../../../Downloads/NUS_logo_full-horizontal.jpg" />
